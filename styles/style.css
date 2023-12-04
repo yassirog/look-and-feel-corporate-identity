@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Raleway:wght@400;500;600&display=swap');
+
+:root {
+    --background-color: #fafafa;
+    --text-color: #44686f;
+    --btn-color: #4ecd5d;
+    --btn-text-color: #fafafa;
+    --heading-1-color: #7faec5;
+    --heading-2-color: #384b61;
+    --footer-text-color: #919ea1;
+    --navbar-color: lightgrey;
+
+        /* border sizes */
+        --border-size-0-1: .1em;
+        --border-size-0-25: .25em;
+        --border-size-0-5: .5em;
+        --border-size-0-75: .75em;
+        --border-size-1: 1em;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    scrollbar-color: var(--btn-color);
+}
+
+/* Navbar CSS */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--navbar-color);
+    overflow: hidden;
+    margin-bottom: 1em;
+    background-color: #4ecd5d;
+    border-radius: 5em;
+}
+
+nav a {
+    font-family: 'Raleway', sans-serif;
+    float: left;
+    display: block;
+    color: var(--btn-text-color);
+    background-color: var(--btn-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--heading-1-color);
+}
+
+
+/* Container CSS */
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+section {
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+}
+
+.text-container {
+    width: 60%;
+    margin-bottom: 2em;
+    padding: 1em;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    color: var(--heading-1-color);
+    border-bottom: var(--border-size-0-1) solid var(--btn-color);
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-color);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--background-color);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--btn-color);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--heading-1-color);
+  }
+  
+  /* Form */ 
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Raleway';
+    border: none;
+  }
+  
+  .contact-form {
+    display: flex;
+    border: none;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    border: none;
+  }
+  
+  input,
+  textarea {
+    margin-top: 1em;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+
