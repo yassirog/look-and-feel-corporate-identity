@@ -22,9 +22,14 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+.body {
     scrollbar-color: var(--btn-color);
     background-color: rgb(245, 245, 245)
+}
+
+.darkbody {
+    scrollbar-color: var(--btn-color);
+    background-color: rgb(27, 27, 27)
 }
 
 h3 {
@@ -39,12 +44,13 @@ h3 {
 nav {
     position: fixed;
     display: flex;
-    width: 100%;
+    justify-self: center;
+    width: 98%;
     background-color: var(--navbar-color);
     overflow: hidden;
-    margin-bottom: 1em;
     background-color: #4ecd5d;
     border-radius: 5em;
+    justify-content: center;
 }
 
 nav a {
@@ -55,17 +61,25 @@ nav a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    flex-grow: 1; /* Neem de beschikbare ruimte in beslag (groei evenredig) */
 }
 
-nav button {
+.navbutton {
     background-color: grey;
     text-decoration: none;
     text-align: center;
-    width: 6em;
+    width: 100%;
+}
+
+.darknavbutton {
+    
 }
 
 nav a:hover {
+    color: var(--heading-1-color);
+}
+
+.nav-link.active {
+    font-weight: bold; /* Of voeg een andere stijl toe om de actieve link te markeren */
     color: var(--heading-1-color);
 }
 
@@ -98,13 +112,18 @@ section {
 }
 
 .darktextcontainer {
-    background-color: grey;
+    background-color: rgb(71, 71, 71);
+    color: white;
     width: 80%;
     margin-bottom: 2em;
     padding: 1em;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
+}
+
+.darktextcontainer p {
+    color: white;
 }
 
 h2 {
